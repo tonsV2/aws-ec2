@@ -5,4 +5,5 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids = [
     aws_security_group.ec2.id
   ]
+  subnet_id = aws_subnet.ec2.id
 }

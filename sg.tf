@@ -1,4 +1,6 @@
 resource "aws_security_group" "ec2" {
+  vpc_id = aws_vpc.ec2.id
+
   ingress {
     from_port = 22
     to_port = 22
