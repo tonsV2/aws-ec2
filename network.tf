@@ -1,8 +1,8 @@
-data "aws_eip" "ssh" {
+data "aws_eip" "ec2" {
   id = var.eip
 }
 
-resource "aws_eip_association" "eip_assoc" {
-  instance_id   = aws_instance.ssh.id
-  allocation_id = data.aws_eip.ssh.id
+resource "aws_eip_association" "ec2" {
+  instance_id   = aws_instance.ec2.id
+  allocation_id = data.aws_eip.ec2.id
 }

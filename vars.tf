@@ -23,5 +23,5 @@ variable "username" {
 }
 
 variable "eip" {
-  default = "eipalloc-05ba2fd3f27595167"
+  default = ""
 }
