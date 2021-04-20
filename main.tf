@@ -5,6 +5,12 @@ terraform {
       version = "~> 3.25.0"
     }
   }
+
+  backend "s3" {
+    bucket = "terraform-ec2-test"
+    key = "state.tfstate"
+    region = "ap-southeast-1"
+  }
 }
 
 provider "aws" {
