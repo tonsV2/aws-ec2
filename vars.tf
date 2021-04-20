@@ -21,7 +21,3 @@ variable "public_key" {
 variable "username" {
   default = "ubuntu"
 }
-
-variable "eip" {
-  default = ""
-}
