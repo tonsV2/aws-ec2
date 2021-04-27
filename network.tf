@@ -22,6 +22,7 @@ resource "aws_route_table" "ec2" {
     gateway_id = aws_internet_gateway.ec2.id
   }
 }
+
 resource "aws_route_table_association" "ec2" {
   subnet_id = aws_subnet.ec2.id
   route_table_id = aws_route_table.ec2.id
