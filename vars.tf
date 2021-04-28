@@ -10,7 +10,7 @@ variable "ami" {
   default = "ami-0528aaa563fd8afaf"
 }
 
-variable "applicaiton_name" {
+variable "application_name" {
   default = "ec2-test"
 }
 
